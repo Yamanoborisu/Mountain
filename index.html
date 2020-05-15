@@ -83,7 +83,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
             .hike {
                display: flex;
-               background: rgba(255, 238, 184) ;
+               background: rgba(255, 223, 128, .5) ;
                margin: 1em 0 1em 0.5em;
                font-size: 24px;
                padding-right: 0.2em;
@@ -93,14 +93,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
                border-radius: 15px;
                box-shadow: 0 0.1em 0.5em 0 #777777;
             }
-
-            
-            
-                  .hike:hover > .badge:after {
-                    right: 0.9em;
-                     transform: skew(-50deg);
-                                     
-                  }
+                  .hike:hover {
+                     box-shadow: 0 0.4em 0.6em 0.2em rgba(153, 102, 51, 0.7);
+                     transition: box-shadow 1s;}
 
                .infoBlock {
                   margin: 0.5em 0 0 0.3em;
@@ -124,24 +119,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
       flex-direction: column;
    }
 
-   .badge {
-      position: relative;
-      width: 40%; height: 100%; margin-right: 0.2em;}
-
-   .badge:after {
-      position: absolute;
-      content: '';
-      z-index: -3;
-      -webkit-box-shadow: 50px 0 5px 10px rgba(0,0,0,0.2);
-      border-radius: 10%;
-      width: 7em;
-      bottom: 0.3em;
-      right: 2em;
-      height: 45%;
-      transform: skew(0deg);
-      transition: transform 1s;
-   }
-
+   .badge {width: 40%; height: 100%; margin-right: 0.2em;}
 
 </style>
 
@@ -232,4 +210,3 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 </body>
 </html>
-
