@@ -6,7 +6,7 @@
 
 
 <style>
-	/*Обнуление*/
+   /*Обнуление*/
 *{padding: 0;margin: 0;border: 0;}
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 :focus,:active{outline: none;}
@@ -25,12 +25,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
    
 
-	body {
+   body {
       display: flex;
       flex-direction: column;
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       background: rgba(255, 253, 210, .3) ;
-   	}
+      }
 
       .logo {
          margin-left: 10px;
@@ -44,10 +44,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
       }
 
       
-             header {
+            header {
             display: flex;
-            position: fixed;
+            align-items: center;
             justify-content: center;
+            position: fixed;
             width: 100%;
             height: 6em;
             margin-bottom: 0.5em;     
@@ -55,10 +56,26 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             background: linear-gradient(to top, rgba(255, 253, 210), rgba(250, 161, 32));
             box-shadow: 0 0.1em 0.2em 0.1em #716b5a;
             }
-               h1 {
-                  align-self: center;
+               .h1 {
+                  
                   font-size: 4em;
                   text-align: center;
+               }
+
+               .button {
+                 position: absolute;
+                 top: .5em;
+                 right: .5em;
+                  width: 15%;
+                  height: 2em;
+                  padding: 2px;
+                  border: 1px solid #000;
+                  text-align: center;
+                  font-size: 2em;
+                  text-align: center;
+                  line-height: 1.7em;
+                  border: 2px solid #a08a4a;
+                  border-radius: 15px;
                }
 
       
@@ -74,16 +91,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             }
 
    
-         	h2 {
-         		display: inline-block;
-         		margin-top: 0.5em;
-         		margin-left: 1.2em; 
-         		font-size: 3em;
-         	}
+            h2 {
+               display: inline-block;
+               margin-top: 0.5em;
+               margin-left: 1.2em; 
+               font-size: 3em;
+            }
 
             .hike {
                display: flex;
-               background: rgba(255, 238, 184) ;
+               background: rgba(255, 223, 128, .5) ;
                margin: 1em 0 1em 0.5em;
                font-size: 24px;
                padding-right: 0.2em;
@@ -93,14 +110,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
                border-radius: 15px;
                box-shadow: 0 0.1em 0.5em 0 #777777;
             }
-
-            
-            
-                  .hike:hover > .badge:after {
-                    right: 0.9em;
-                     transform: skew(-50deg);
-                                     
-                  }
+                  .hike:hover {
+                     box-shadow: 0 0.4em 0.6em 0.2em rgba(153, 102, 51, 0.7);
+                     transition: box-shadow 1s;}
 
                .infoBlock {
                   margin: 0.5em 0 0 0.3em;
@@ -124,24 +136,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
       flex-direction: column;
    }
 
-   .badge {
-      position: relative;
-      width: 40%; height: 100%; margin-right: 0.2em;}
-
-   .badge:after {
-      position: absolute;
-      content: '';
-      z-index: -3;
-      -webkit-box-shadow: 50px 0 5px 10px rgba(0,0,0,0.2);
-      border-radius: 10%;
-      width: 7em;
-      bottom: 0.3em;
-      right: 2em;
-      height: 45%;
-      transform: skew(0deg);
-      transition: transform 1s;
-   }
-
+   .badge {width: 40%; height: 100%; margin-right: 0.2em;}
 
 </style>
 
@@ -153,9 +148,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 <body>
 
    
-   <header>
-      <h1>Походы были таковы</h1>
-   </header>
+     <header>
+      <div class="h1">Походы были таковы</div>
+      <div class="button" onclick="window.open('https://google.com','_self',false)">Offer a New Hike </div>
+     </header>
    
 
    <div class="mainArea">
@@ -232,4 +228,3 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 </body>
 </html>
-
