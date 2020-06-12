@@ -1,10 +1,5 @@
 <!-- The div element for the map -->
 <div id="map">
-<!-- Replace the value of the key parameter with your own API key. -->
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVpvd7SOVCDWe3XiCps1r6428suI7BMq0&callback=initMap">
-</script>
-
 <script>
 	// Initialize and add the map
 function initMap() {
@@ -33,5 +28,8 @@ function initMap() {
         document.getElementById("lng").value = location.lng();
       }
 }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVpvd7SOVCDWe3XiCps1r6428suI7BMq0&callback=initMap">
 </script>
 </div>

@@ -7,7 +7,7 @@ $parnode = $dom->appendChild($node);
 
 // Opens a connection to a MySQL server
 
-$link = mysqli_connect('localhost', 'root', 'root', 'mountain');
+$link = mysqli_connect('pdb50.awardspace.net', '3460944_mountain', 'root88root', '3460944_mountain');
       if (!$link) {
       die('Ошибка подключения (' . mysqli_connect_errno() . ') '
       . mysqli_connect_error());

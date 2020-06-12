@@ -1,9 +1,9 @@
-35.19212749930705
-136.88375986710793
-24.02°C, overcast clouds
-30.34°C, clear sky
-29.78°C, overcast clouds
-30.08°C, overcast clouds
-31.62°C, clear sky
-32.6°C, light rain
-29.2°C, overcast clouds
+35.30427860030465
+138.93545664445168
+26.51°C, overcast clouds
+26.62°C, few clouds
+25.33°C, moderate rain
+22.57°C, light rain
+22.28°C, light rain
+25.76°C, few clouds
+24.57°C, broken clouds

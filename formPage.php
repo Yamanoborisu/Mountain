@@ -46,7 +46,7 @@
    if($data){  // check if we got them
       $dataJson = json_decode($data, true); // end decoding, return objects as arrays
       $weekArray = $dataJson['daily']; //get only important part of first array
-   	}
+   	} 
 
    //write coordinates and weather info in file, to be able to get them after refreshing the page be "submit"
    if( !empty($_GET)) {
